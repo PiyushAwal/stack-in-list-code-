@@ -1,0 +1,93 @@
+print("stack operation in python ")
+l=[]
+while True:
+    m=int(input('''
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    '''))
+    if m==1:
+        c=int(input("enter the value of the element:"))
+        l.append(c)
+        print(l)
+    elif m==2:
+        if len(l)==0:
+            print("stack is empty")
+        else:
+            print(l.pop())
+            print(l)
+    elif m==3:
+        if len(l)==0:
+            print("stack is empty")
+        else:
+            print("the peek value is:",l[-1])
+    elif m==4:
+        if len(l) == 0:
+            print("stack is empty")
+        else:
+            print("display the stack:",l)
+    elif m==5:
+        break
+    else:
+        print("invalid choice")
+
+
+Output :-
+stack operation in python 
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 1
+enter the value of the element:>? 10
+[10]
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 1
+enter the value of the element:>? 20
+[10, 20]
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 1
+enter the value of the element:>? 30
+[10, 20, 30]
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 2
+30
+[10, 20]
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 4
+display the stack: [10, 20]
+    1.push operation
+    2.pop operation
+    3.peek operation
+    4.display operation
+    5.exit
+    enter number:
+    >? 5
+
+
+
