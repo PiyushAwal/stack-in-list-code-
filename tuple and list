@@ -1,0 +1,49 @@
+print("tuple")
+t=(10,20,30,40,50,60)
+a=t[2]
+print(a)
+a=t.index(10)
+print("index of 10 is",a)
+m=max(t)
+print("max in python:",m)
+n=min(t)
+print("minimum value:",n)
+c=t.count(10)
+print("count of the 10:",c)
+a=sum(t)
+print("sum of the element is:",a)
+print("set")
+l=[10,20,30,40,50]
+o=set(l)
+print("the set is a:",o)#when converting the list into the set the element of the can be randomly arranged in set
+s={10,20,30,40,50,60}
+s.add(100)
+print("add the element:",s)
+s.pop()
+print("pop of the element:",s)
+s.remove(30)
+print("remove the 30:",s)
+s.discard(40)
+print("discard element in the stack is:",s)
+u=[25,50,75,100]
+s.update(u)
+print("updaeed set is:",s)
+s.clear()
+print("clear the set",s)
+
+output:
+tuple
+30
+index of 10 is 0
+max in python: 60
+minimum value: 10
+count of the 10: 1
+sum of the element is: 210
+set
+the set is a: {40, 10, 50, 20, 30}
+add the element: {50, 20, 100, 40, 10, 60, 30}
+pop of the element: {20, 100, 40, 10, 60, 30}
+remove the 30: {20, 100, 40, 10, 60}
+discard element in the stack is: {20, 100, 10, 60}
+updaeed set is: {100, 10, 75, 50, 20, 25, 60}
+clear the set set()
