@@ -1,0 +1,27 @@
+d={
+    "name":"python",
+    "fees":50000,
+    "date":"30 jun"
+}
+m=d.get('name')
+print(m)
+print(d)
+for a in d.keys():
+    print(a)
+for b in d.values():
+    print(b)
+for m,n in d.items():
+    print(m,n)
+
+  outpu:
+      
+{'name': 'python', 'fees': 50000, 'date': '30 jun'}
+name
+fees
+date
+python
+50000
+30 jun
+name python
+fees 50000
+date 30 jun
