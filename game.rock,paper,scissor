@@ -1,0 +1,288 @@
+import random
+import datetime
+print(datetime.datetime.now())
+mcount=0
+ccount=0
+l = ["rock", "paper", "scissor"]
+while True:
+    s=int(input('''
+    you want play or not
+    1.yes
+    2.no/exit
+    '''))
+    if s==1:
+        for i in range(1,6):
+            uchoice=int(input('''
+            1.rock
+            2.paper
+            3.scissor
+        '''))
+            if uchoice==1:
+                choice="rock"
+            elif uchoice==2:
+                choice="paper"
+            elif uchoice==3:
+                choice="scissor"
+            cchoice = random.choice(l)
+            print("computer choice:",cchoice)
+            print("user choice:",choice)
+            if choice==cchoice:
+                print("your choice:",choice)
+                print("computer choice:",cchoice)
+                print("draw the match")
+                mcount=mcount+1
+                ccount=ccount+1
+            elif (choice=="rock" and cchoice=="scissor") or (choice=="scissor" and cchoice=="paper") or (choice=="paper" and cchoice=="rock"):
+                print("user win the match")
+                mcount=mcount+1
+                print("user win:",mcount)
+            else:
+                print("computer is win the match")
+                ccount=ccount+1
+                print("computer win",ccount)
+        print("user point:",mcount)
+        print("computer point:",ccount)
+        if mcount>ccount:
+            print("the user can win the match with point",mcount,"<",ccount)
+        elif ccount>mcount:
+            print("the computer is win the match with point", ccount,">",mcount)
+        else:
+            print("draw the match:",ccount,"==",mcount)
+
+    else:
+        break
+
+output:
+**computer win the match**
+PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\game.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+2025-06-26 21:10:58.598094
+    you want play or not
+    1.yes
+    2.no/exit
+    >? 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: paper
+user choice: rock
+computer is win the match
+computer win 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 2
+computer choice: paper
+user choice: paper
+your choice: paper
+computer choice: paper
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 3
+computer choice: scissor
+user choice: scissor
+your choice: scissor
+computer choice: scissor
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 3
+            1.rock
+            2.paper
+            3.scissor
+        >? 2
+computer choice: scissor
+user choice: paper
+computer is win the match
+computer win 4
+user point: 3
+computer point: 4
+the computer is win the match with point 4 > 3
+    you want play or not
+    1.yes
+    2.no/exit
+***user win the match***
+PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\game.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+2025-06-26 21:13:45.983071
+    you want play or not
+    1.yes
+    2.no/exit
+    >? 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 2
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+user point: 5
+computer point: 3
+the user can win the match with point 5 < 3
+    you want play or not
+    1.yes
+    2.no/exit
+
+****draw the match****
+PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\game.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+2025-06-26 21:15:29.640566
+    you want play or not
+    1.yes
+    2.no/exit
+    >? 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: paper
+user choice: rock
+computer is win the match
+computer win 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 2
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: scissor
+user choice: rock
+user win the match
+user win: 4
+user point: 4
+computer point: 2
+the user can win the match with point 4 < 2
+    you want play or not
+    1.yes
+    2.no/exit
+    >? 1
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: paper
+user choice: rock
+computer is win the match
+computer win 5
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: rock
+user choice: rock
+your choice: rock
+computer choice: rock
+draw the match
+            1.rock
+            2.paper
+            3.scissor
+        >? 1
+computer choice: paper
+user choice: rock
+computer is win the match
+computer win 7
+user point: 7
+computer point: 7
+draw the match: 7 == 7
+    you want play or not
+    1.yes
+    2.no/exit
+  *******not play the match*****
+PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\game.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+2025-06-26 21:15:57.032729
+    you want play or not
+    1.yes
+    2.no/exit
+    >? 2
+
+    
