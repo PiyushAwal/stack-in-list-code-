@@ -1,0 +1,20 @@
+import random
+print(random.randint(2,10))
+print(random.randrange(0,10))
+l=['apple','banana','orange']
+print(random.choice(l))
+print(random.random())
+m=[10,20,30,40,50,60]
+random.shuffle(m)
+print(m)
+print(random.uniform(3,9))
+
+output:-PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\module.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+3
+1
+banana
+0.3172373715438733
+[50, 40, 30, 60, 10, 20]
+6.8533643026366216
