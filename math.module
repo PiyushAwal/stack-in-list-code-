@@ -1,0 +1,19 @@
+import math
+a=10.5
+x=10
+s=-10
+print(math.ceil(a))#is give the next integer value
+print(math.sqrt(a))#is give the square root of that number
+print(math.factorial(x))#is give the factorial of that number
+print(math.floor(a))#is give the integer value before that value
+print(math.fabs(s))#is convert the negative value into the positive float value
+
+output:
+PyDev console: starting.
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+runfile('C:\\Users\\piyus\\PycharmProjects\\PiyushProject\\module.py', wdir='C:\\Users\\piyus\\PycharmProjects\\PiyushProject')
+11
+3.24037034920393
+3628800
+10
+10.0
