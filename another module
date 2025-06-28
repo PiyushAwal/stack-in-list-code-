@@ -1,0 +1,84 @@
+# # import tuple_set
+# # import list
+# # print(tuple_set)
+# # print(list)
+# import random
+# n=int(input("enter the number:"))
+# if n<0:
+#     print("negative number")
+# elif n>0:
+#     print("positive number")
+# elif n==0:
+#     print("number is equal to the zero")
+# else:
+#     print("invalid number")
+# l=["apple","mango","banana"]
+# m=random.choice(l)
+# print("computer choice:",m)
+# a=input('''
+# 1.apple
+# 2.mango
+# 3.banana
+# # ''')
+# if a==1:
+#     o="apple"
+# elif a==2:
+#     o="mango"
+# elif a==3:
+#     o="banana"
+# if (m=="apple"and o=="apple") or (m=="mango" and o=="mango") or (m=="banana" and o=="banana"):
+#     print("write answer you win!")
+# else:
+#     print("wrong answer you loss the match")
+# print("looping in python")
+import datetime
+import pickle
+n=datetime.datetime.now()
+year=n.strftime("%y")
+print("year:",year)
+year=n.strftime("%Y")
+print("year:",year)
+month=n.strftime("%b")
+print("month:",month)
+m=n.strftime("%B")
+print("month:",m)
+hour=n.strftime("%H")
+print("hour:",hour)
+h=n.strftime("%I")
+print("hour:",h)
+m=n.strftime("%M")
+print("minute:",m)
+M=n.strftime("%m")
+print("month:",M)
+am=n.strftime("%p")
+print("amor pm:",am)
+print()
+l=[10,20,30,40,50]
+name=open("file.txt",'rb')
+pickle.load(name)
+name.close()
+# n=open("file.txt","rb")
+# pickle.load(n)
+# n.close()
+# reapeat the topic of pickle and the json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
