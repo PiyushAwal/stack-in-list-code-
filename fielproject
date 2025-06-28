@@ -1,0 +1,23 @@
+import PyPDF2
+from PyPDF2 import PdfReader
+
+reader = PdfReader('developers.pdf')
+#for reader in range(1,1000):
+number_of_pages = len(reader.pages)
+str=input("enter the string:")
+for i in range(0,number_of_pages):
+    page = reader.pages[i]
+    print(page)
+    text = page.extract_text()
+    print (text)
+    print("no. of pages are",number_of_pages)
+    search = str
+    search = search.casefold()
+    string = text.casefold()
+    if search in string:
+        print("search element found")
+        break
+else:
+    print("not found")
+
+
