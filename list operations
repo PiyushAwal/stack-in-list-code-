@@ -1,0 +1,79 @@
+list=[]
+while True:
+    m=int(input('''
+    1.append 
+    2.delete 
+    3.display the last element 
+    4.display the list
+    5.exit
+    6.clear
+    7.count
+    8.maximum value 
+    9.minimum value
+    10.sort
+    11.reverse
+    enter the value in the form of integer as indicate the above:
+    '''))
+    if m==1:
+        a=int(input("enter the append value:"))
+        list.append(a)
+        print(list)
+    elif m==2:
+        if list==0:
+            print("stack is empty:")
+        else:
+            p=list.pop()
+            print("pop element is:",p)
+            print(list)
+    elif m==3:
+        if list==0:
+            print("stack is empty:")
+        else:
+            print("the last element in the list is:",list[-1])
+    elif m==4:
+        if list ==0:
+            print("list is empty:")
+        else:
+            print("the list is:",list)
+    elif m==6:
+        if list ==0:
+            print("list is empty:")
+        else:
+            print("clear the list:",list.clear())
+    elif m==7:
+        if list ==0:
+            print("list is empty:")
+        else:
+            c=int(input("enter that value to find how many times this value will be repeating"))
+            print("count:",list.count(c))
+    elif m==8:
+        if list ==0:
+            print("list is empty:")
+        else:
+            m=max(list)
+            print("maximum value:",m)
+    elif m==9:
+        if list ==0:
+            print("list is empty:")
+        else:
+            n=min(list)
+            print("minimum value in the list is:",n)
+    elif m==10:
+        if list ==0:
+            print("list is empty:")
+        else:
+            list.sort()
+            print("sort:",list)
+    elif m==11:
+        if list ==0:
+            print("list is empty:")
+        else:
+           list.reverse()
+           print("reverse of the list is:",list)
+           
+           
+           
+
+
+    elif m==5:
+        break
